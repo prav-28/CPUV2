@@ -1,0 +1,73 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cs/student/ug/2019/huiyxiao/Desktop/Counter/simulation/qsim
+vcounter1
+Z1 !s110 1572441575
+!i10b 1
+!s100 gGNVc><OaCJ8C6A;P^kl:1
+IH^XoE[hJnKKTgXJYAJ^L71
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z3 w1572441574
+Z4 8Counter.vo
+Z5 FCounter.vo
+L0 32
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1572441574.000000
+Z8 !s107 Counter.vo|
+Z9 !s90 -work|work|Counter.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+vcounter1_vlg_vec_tst
+R1
+!i10b 1
+!s100 ]`=9D`Z0BjP:`_816?Mm;1
+I?2O<kBCiLMEF791bC:bQh1
+R2
+R0
+w1572441573
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+L0 30
+R6
+r1
+!s85 0
+31
+!s108 1572441575.000000
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+R11
+vhard_block
+R1
+!i10b 1
+!s100 [95K4b613b5z^cTDM6?5c2
+I4WCGiK>WCBkz4W_d4c6Vk0
+R2
+R0
+R3
+R4
+R5
+L0 618
+R6
+r1
+!s85 0
+31
+R7
+R8
+R9
+!i113 1
+R10
+R11

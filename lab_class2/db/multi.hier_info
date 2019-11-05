@@ -1,0 +1,515 @@
+|thirtytwobit
+Y[0] <= four_multi:inst.Y[0]
+Y[1] <= four_multi:inst.Y[1]
+Y[2] <= four_multi:inst.Y[2]
+Y[3] <= four_multi:inst.Y[3]
+Y[4] <= four_multi:inst1.Y[0]
+Y[5] <= four_multi:inst1.Y[1]
+Y[6] <= four_multi:inst1.Y[2]
+Y[7] <= four_multi:inst1.Y[3]
+Y[8] <= four_multi:inst2.Y[0]
+Y[9] <= four_multi:inst2.Y[1]
+Y[10] <= four_multi:inst2.Y[2]
+Y[11] <= four_multi:inst2.Y[3]
+Y[12] <= four_multi:inst3.Y[0]
+Y[13] <= four_multi:inst3.Y[1]
+Y[14] <= four_multi:inst3.Y[2]
+Y[15] <= four_multi:inst3.Y[3]
+Y[16] <= four_multi:inst6.Y[0]
+Y[17] <= four_multi:inst6.Y[1]
+Y[18] <= four_multi:inst6.Y[2]
+Y[19] <= four_multi:inst6.Y[3]
+Y[20] <= four_multi:inst7.Y[0]
+Y[21] <= four_multi:inst7.Y[1]
+Y[22] <= four_multi:inst7.Y[2]
+Y[23] <= four_multi:inst7.Y[3]
+Y[24] <= four_multi:inst8.Y[0]
+Y[25] <= four_multi:inst8.Y[1]
+Y[26] <= four_multi:inst8.Y[2]
+Y[27] <= four_multi:inst8.Y[3]
+Y[28] <= four_multi:inst9.Y[0]
+Y[29] <= four_multi:inst9.Y[1]
+Y[30] <= four_multi:inst9.Y[2]
+Y[31] <= four_multi:inst9.Y[3]
+S => four_multi:inst.S
+S => four_multi:inst1.S
+S => four_multi:inst2.S
+S => four_multi:inst3.S
+S => four_multi:inst6.S
+S => four_multi:inst7.S
+S => four_multi:inst8.S
+S => four_multi:inst9.S
+A[0] => four_multi:inst.A[0]
+A[1] => four_multi:inst.A[1]
+A[2] => four_multi:inst.A[2]
+A[3] => four_multi:inst.A[3]
+A[4] => four_multi:inst1.A[0]
+A[5] => four_multi:inst1.A[1]
+A[6] => four_multi:inst1.A[2]
+A[7] => four_multi:inst1.A[3]
+A[8] => four_multi:inst2.A[0]
+A[9] => four_multi:inst2.A[1]
+A[10] => four_multi:inst2.A[2]
+A[11] => four_multi:inst2.A[3]
+A[12] => four_multi:inst3.A[0]
+A[13] => four_multi:inst3.A[1]
+A[14] => four_multi:inst3.A[2]
+A[15] => four_multi:inst3.A[3]
+A[16] => four_multi:inst6.A[0]
+A[17] => four_multi:inst6.A[1]
+A[18] => four_multi:inst6.A[2]
+A[19] => four_multi:inst6.A[3]
+A[20] => four_multi:inst7.A[0]
+A[21] => four_multi:inst7.A[1]
+A[22] => four_multi:inst7.A[2]
+A[23] => four_multi:inst7.A[3]
+A[24] => four_multi:inst8.A[0]
+A[25] => four_multi:inst8.A[1]
+A[26] => four_multi:inst8.A[2]
+A[27] => four_multi:inst8.A[3]
+A[28] => four_multi:inst9.A[0]
+A[29] => four_multi:inst9.A[1]
+A[30] => four_multi:inst9.A[2]
+A[31] => four_multi:inst9.A[3]
+B[0] => four_multi:inst.B[0]
+B[1] => four_multi:inst.B[1]
+B[2] => four_multi:inst.B[2]
+B[3] => four_multi:inst.B[3]
+B[4] => four_multi:inst1.B[0]
+B[5] => four_multi:inst1.B[1]
+B[6] => four_multi:inst1.B[2]
+B[7] => four_multi:inst1.B[3]
+B[8] => four_multi:inst2.B[0]
+B[9] => four_multi:inst2.B[1]
+B[10] => four_multi:inst2.B[2]
+B[11] => four_multi:inst2.B[3]
+B[12] => four_multi:inst3.B[0]
+B[13] => four_multi:inst3.B[1]
+B[14] => four_multi:inst3.B[2]
+B[15] => four_multi:inst3.B[3]
+B[16] => four_multi:inst6.B[0]
+B[17] => four_multi:inst6.B[1]
+B[18] => four_multi:inst6.B[2]
+B[19] => four_multi:inst6.B[3]
+B[20] => four_multi:inst7.B[0]
+B[21] => four_multi:inst7.B[1]
+B[22] => four_multi:inst7.B[2]
+B[23] => four_multi:inst7.B[3]
+B[24] => four_multi:inst8.B[0]
+B[25] => four_multi:inst8.B[1]
+B[26] => four_multi:inst8.B[2]
+B[27] => four_multi:inst8.B[3]
+B[28] => four_multi:inst9.B[0]
+B[29] => four_multi:inst9.B[1]
+B[30] => four_multi:inst9.B[2]
+B[31] => four_multi:inst9.B[3]
+
+
+|thirtytwobit|four_multi:inst
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst1
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst1|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst1|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst1|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst1|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst2
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst2|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst2|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst2|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst2|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst3
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst3|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst3|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst3|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst3|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst6
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst6|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst6|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst6|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst6|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst7
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst7|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst7|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst7|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst7|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst8
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst8|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst8|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst8|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst8|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst9
+Y[0] <= multi:inst.Y
+Y[1] <= multi:inst1.Y
+Y[2] <= multi:inst2.Y
+Y[3] <= multi:inst3.Y
+A[0] => multi:inst.A
+A[1] => multi:inst1.A
+A[2] => multi:inst2.A
+A[3] => multi:inst3.A
+B[0] => multi:inst.B
+B[1] => multi:inst1.B
+B[2] => multi:inst2.B
+B[3] => multi:inst3.B
+S => multi:inst.S
+S => multi:inst1.S
+S => multi:inst2.S
+S => multi:inst3.S
+
+
+|thirtytwobit|four_multi:inst9|multi:inst
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst9|multi:inst1
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst9|multi:inst2
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+
+|thirtytwobit|four_multi:inst9|multi:inst3
+Y <= inst3.DB_MAX_OUTPUT_PORT_TYPE
+B => inst.IN0
+S => inst.IN1
+S => inst2.IN0
+A => inst1.IN0
+
+

@@ -1,0 +1,137 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/cs/student/ug/2019/huiyxiao/Desktop/lab_class2/simulation/qsim
+v\4bit_multi 
+!s110 1571215043
+!i10b 1
+!s100 8ZieCf>C7eR6KF7BG[`Fd2
+ILT<E:K<?nRXcHQF?5GnE83
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1571215041
+Z2 8multi.vo
+Z3 Fmulti.vo
+Z4 L0 32
+Z5 OV;L;10.5b;63
+r1
+!s85 0
+31
+!s108 1571215043.000000
+Z6 !s107 multi.vo|
+Z7 !s90 -work|work|multi.vo|
+!i113 1
+Z8 o-work work
+Z9 tCvgOpt 0
+n@1344bit_multi@040
+vfour_multi
+Z10 !s110 1571215319
+!i10b 1
+!s100 nOC9NN9NOYPXdUj<k[VYo2
+I9::0P>FQX?Kz>_:CaW5U_2
+R1
+R0
+w1571215317
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+Z11 !s108 1571215319.000000
+R6
+R7
+!i113 1
+R8
+R9
+vfour_multi_vlg_vec_tst
+R10
+!i10b 1
+!s100 7N]lo_l_LBUdT6FUSk5RB3
+IQf;T0Edfc@_P]9oEL7UMb2
+R1
+R0
+w1571215315
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z12 L0 30
+R5
+r1
+!s85 0
+31
+R11
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R8
+R9
+vhard_block
+Z13 !s110 1571648311
+!i10b 1
+!s100 CXc>i:o@o5l8@SZDW3<jE2
+IkkXPZK8^hWFA:e>YoDS9z0
+R1
+R0
+Z14 w1571648310
+R2
+R3
+L0 2197
+R5
+r1
+!s85 0
+31
+Z15 !s108 1571648311.000000
+R6
+R7
+!i113 1
+R8
+R9
+vthirtytwobit
+R13
+!i10b 1
+!s100 g=_U6c>V1g^aT?_=DjSd^3
+IA:HPm[V69UVgOaVV9HSYI3
+R1
+R0
+R14
+R2
+R3
+R4
+R5
+r1
+!s85 0
+31
+R15
+R6
+R7
+!i113 1
+R8
+R9
+vthirtytwobit_vlg_vec_tst
+R13
+!i10b 1
+!s100 Q>U3GB]ZI;i72f?g;82je1
+If`^e1AJO0^Z[FcfZcX<;U3
+R1
+R0
+w1571648309
+8Waveformbits.vwf.vt
+FWaveformbits.vwf.vt
+R12
+R5
+r1
+!s85 0
+31
+R15
+!s107 Waveformbits.vwf.vt|
+!s90 -work|work|Waveformbits.vwf.vt|
+!i113 1
+R8
+R9

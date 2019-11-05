@@ -1,0 +1,45 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "ao",
+					"strict" : false
+				},
+				{
+					"name" : "bo",
+					"strict" : false
+				},
+				{
+					"name" : "co",
+					"strict" : false
+				},
+				{
+					"name" : "do",
+					"strict" : false
+				},
+				{
+					"name" : "eo",
+					"strict" : false
+				},
+				{
+					"name" : "fo",
+					"strict" : false
+				},
+				{
+					"name" : "go",
+					"strict" : false
+				},
+				{
+					"name" : "Reset",
+					"strict" : false
+				},
+				{
+					"name" : "CLK_IN",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
