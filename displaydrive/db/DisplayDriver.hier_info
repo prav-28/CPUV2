@@ -1,0 +1,523 @@
+|ThirtyTwoBitReg
+Qout[0] <= FourBitRegister:inst.Qout[0]
+Qout[1] <= FourBitRegister:inst.Qout[1]
+Qout[2] <= FourBitRegister:inst.Qout[2]
+Qout[3] <= FourBitRegister:inst.Qout[3]
+Qout[4] <= FourBitRegister:inst2.Qout[0]
+Qout[5] <= FourBitRegister:inst2.Qout[1]
+Qout[6] <= FourBitRegister:inst2.Qout[2]
+Qout[7] <= FourBitRegister:inst2.Qout[3]
+Qout[8] <= FourBitRegister:inst4.Qout[0]
+Qout[9] <= FourBitRegister:inst4.Qout[1]
+Qout[10] <= FourBitRegister:inst4.Qout[2]
+Qout[11] <= FourBitRegister:inst4.Qout[3]
+Qout[12] <= FourBitRegister:inst6.Qout[0]
+Qout[13] <= FourBitRegister:inst6.Qout[1]
+Qout[14] <= FourBitRegister:inst6.Qout[2]
+Qout[15] <= FourBitRegister:inst6.Qout[3]
+Qout[16] <= FourBitRegister:inst7.Qout[0]
+Qout[17] <= FourBitRegister:inst7.Qout[1]
+Qout[18] <= FourBitRegister:inst7.Qout[2]
+Qout[19] <= FourBitRegister:inst7.Qout[3]
+Qout[20] <= FourBitRegister:inst8.Qout[0]
+Qout[21] <= FourBitRegister:inst8.Qout[1]
+Qout[22] <= FourBitRegister:inst8.Qout[2]
+Qout[23] <= FourBitRegister:inst8.Qout[3]
+Qout[24] <= FourBitRegister:inst10.Qout[0]
+Qout[25] <= FourBitRegister:inst10.Qout[1]
+Qout[26] <= FourBitRegister:inst10.Qout[2]
+Qout[27] <= FourBitRegister:inst10.Qout[3]
+Qout[28] <= FourBitRegister:inst11.Qout[0]
+Qout[29] <= FourBitRegister:inst11.Qout[1]
+Qout[30] <= FourBitRegister:inst11.Qout[2]
+Qout[31] <= FourBitRegister:inst11.Qout[3]
+Reset => FourBitRegister:inst.Reset
+Reset => FourBitRegister:inst2.Reset
+Reset => FourBitRegister:inst4.Reset
+Reset => FourBitRegister:inst7.Reset
+Reset => FourBitRegister:inst8.Reset
+Reset => FourBitRegister:inst10.Reset
+Reset => FourBitRegister:inst11.Reset
+Reset => FourBitRegister:inst6.Reset
+Clk => FourBitRegister:inst.Clk
+Clk => FourBitRegister:inst2.Clk
+Clk => FourBitRegister:inst4.Clk
+Clk => FourBitRegister:inst7.Clk
+Clk => FourBitRegister:inst8.Clk
+Clk => FourBitRegister:inst10.Clk
+Clk => FourBitRegister:inst11.Clk
+Clk => FourBitRegister:inst6.Clk
+D[0] => FourBitRegister:inst.D[0]
+D[1] => FourBitRegister:inst.D[1]
+D[2] => FourBitRegister:inst.D[2]
+D[3] => FourBitRegister:inst.D[3]
+D[4] => FourBitRegister:inst2.D[0]
+D[5] => FourBitRegister:inst2.D[1]
+D[6] => FourBitRegister:inst2.D[2]
+D[7] => FourBitRegister:inst2.D[3]
+D[8] => FourBitRegister:inst4.D[0]
+D[9] => FourBitRegister:inst4.D[1]
+D[10] => FourBitRegister:inst4.D[2]
+D[11] => FourBitRegister:inst4.D[3]
+D[12] => FourBitRegister:inst6.D[0]
+D[13] => FourBitRegister:inst6.D[1]
+D[14] => FourBitRegister:inst6.D[2]
+D[15] => FourBitRegister:inst6.D[3]
+D[16] => FourBitRegister:inst7.D[0]
+D[17] => FourBitRegister:inst7.D[1]
+D[18] => FourBitRegister:inst7.D[2]
+D[19] => FourBitRegister:inst7.D[3]
+D[20] => FourBitRegister:inst8.D[0]
+D[21] => FourBitRegister:inst8.D[1]
+D[22] => FourBitRegister:inst8.D[2]
+D[23] => FourBitRegister:inst8.D[3]
+D[24] => FourBitRegister:inst10.D[0]
+D[25] => FourBitRegister:inst10.D[1]
+D[26] => FourBitRegister:inst10.D[2]
+D[27] => FourBitRegister:inst10.D[3]
+D[28] => FourBitRegister:inst11.D[0]
+D[29] => FourBitRegister:inst11.D[1]
+D[30] => FourBitRegister:inst11.D[2]
+D[31] => FourBitRegister:inst11.D[3]
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst2
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst2|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst2|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst2|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst2|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst4
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst4|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst4|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst4|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst4|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst7
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst7|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst7|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst7|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst7|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst8
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst8|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst8|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst8|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst8|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst10
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst10|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst10|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst10|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst10|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst11
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst11|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst11|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst11|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst11|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst6
+Qout[0] <= Resttaable_D_Flip_Flop:inst.Q
+Qout[1] <= Resttaable_D_Flip_Flop:inst1.Q
+Qout[2] <= Resttaable_D_Flip_Flop:inst2.Q
+Qout[3] <= Resttaable_D_Flip_Flop:inst3.Q
+D[0] => Resttaable_D_Flip_Flop:inst.D
+D[1] => Resttaable_D_Flip_Flop:inst1.D
+D[2] => Resttaable_D_Flip_Flop:inst2.D
+D[3] => Resttaable_D_Flip_Flop:inst3.D
+Reset => Resttaable_D_Flip_Flop:inst.Reset
+Reset => Resttaable_D_Flip_Flop:inst1.Reset
+Reset => Resttaable_D_Flip_Flop:inst2.Reset
+Reset => Resttaable_D_Flip_Flop:inst3.Reset
+Clk => Resttaable_D_Flip_Flop:inst.Clk
+Clk => Resttaable_D_Flip_Flop:inst1.Clk
+Clk => Resttaable_D_Flip_Flop:inst2.Clk
+Clk => Resttaable_D_Flip_Flop:inst3.Clk
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst6|Resttaable_D_Flip_Flop:inst
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst6|Resttaable_D_Flip_Flop:inst1
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst6|Resttaable_D_Flip_Flop:inst2
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|ThirtyTwoBitReg|FourBitRegister:inst6|Resttaable_D_Flip_Flop:inst3
+Q <= inst6.DB_MAX_OUTPUT_PORT_TYPE
+D => inst11.IN0
+Reset => inst12.IN0
+Clk => inst.IN1
+Clk => inst1.IN0
+notQ <= inst7.DB_MAX_OUTPUT_PORT_TYPE
+
+
