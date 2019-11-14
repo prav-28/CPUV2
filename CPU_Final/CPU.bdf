@@ -893,6 +893,23 @@ https://fpgasoftware.intel.com/eula.
 	)
 )
 (symbol
+	(rect 1096 704 1128 736)
+	(text "GND" (rect 8 16 29 26)(font "Arial" (font_size 6)))
+	(text "inst22" (rect 3 21 34 34)(font "Intel Clear" )(invisible))
+	(port
+		(pt 16 0)
+		(output)
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(text "1" (rect 18 0 25 11)(font "Courier New" (bold))(invisible))
+		(line (pt 16 8)(pt 16 0))
+	)
+	(drawing
+		(line (pt 8 8)(pt 16 16))
+		(line (pt 16 16)(pt 24 8))
+		(line (pt 8 8)(pt 24 8))
+	)
+)
+(symbol
 	(rect 2184 688 2344 784)
 	(text "ThirtytwoFullAdder" (rect 5 0 115 15)(font "Intel Clear" (font_size 8)))
 	(text "inst2" (rect 8 79 32 92)(font "Intel Clear" ))
@@ -1687,6 +1704,14 @@ https://fpgasoftware.intel.com/eula.
 	(pt 2456 448)
 	(pt 2456 664)
 	(bus)
+)
+(connector
+	(pt 1136 640)
+	(pt 1112 640)
+)
+(connector
+	(pt 1112 640)
+	(pt 1112 704)
 )
 (junction (pt 704 808))
 (junction (pt 544 720))
