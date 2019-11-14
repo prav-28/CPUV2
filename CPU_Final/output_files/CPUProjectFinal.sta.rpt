@@ -1,5 +1,5 @@
 Timing Analyzer report for CPUProjectFinal
-Thu Nov 14 13:18:14 2019
+Thu Nov 14 16:07:08 2019
 Quartus Prime Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
 
 
@@ -94,13 +94,14 @@ https://fpgasoftware.intel.com/eula.
 ; Number detected on machine ; 16          ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.91        ;
+; Average used               ; 2.03        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;  22.1%      ;
-;     Processors 3-8         ;  11.4%      ;
+;     Processor 3            ;  16.7%      ;
+;     Processors 4-8         ;  12.8%      ;
 +----------------------------+-------------+
 
 
@@ -114,14 +115,14 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------------------------------------------------------------+------+--------+------------+-------+-------+------------+-----------+-------------+-------+--------+-----------+------------+----------+--------+--------+-------------------------------------------------------------------------------------------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Slow 1200mV 85C Model Fmax Summary                                                                                                                                                              ;
-+-----------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-; Fmax      ; Restricted Fmax ; Clock Name                                                                                        ; Note                                                          ;
-+-----------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-; 23.21 MHz ; 23.21 MHz       ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ;                                                               ;
-; 342.7 MHz ; 250.0 MHz       ; CLK_IN                                                                                            ; limit due to minimum period restriction (max I/O toggle rate) ;
-+-----------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Slow 1200mV 85C Model Fmax Summary                                                                                                                                                               ;
++------------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+; Fmax       ; Restricted Fmax ; Clock Name                                                                                        ; Note                                                          ;
++------------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
+; 21.42 MHz  ; 21.42 MHz       ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ;                                                               ;
+; 335.68 MHz ; 250.0 MHz       ; CLK_IN                                                                                            ; limit due to minimum period restriction (max I/O toggle rate) ;
++------------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
 
@@ -130,8 +131,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                             ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -21.044 ; -22064.961    ;
-; CLK_IN                                                                                            ; -2.011  ; -28.060       ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -23.487 ; -33099.820    ;
+; CLK_IN                                                                                            ; -2.171  ; -29.519       ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -140,8 +141,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.456 ; 0.000         ;
-; CLK_IN                                                                                            ; 0.478 ; 0.000         ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.480 ; 0.000         ;
+; CLK_IN                                                                                            ; 0.622 ; 0.000         ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -150,7 +151,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                             ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -19.419 ; -455.188      ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -23.014 ; -527.689      ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -159,7 +160,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.823 ; 0.000         ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 1.242 ; 0.000         ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -169,7 +170,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                                                                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 ; CLK_IN                                                                                            ; -3.000 ; -33.866       ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -1.403 ; -2963.136     ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -1.403 ; -3142.720     ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -184,8 +185,8 @@ No synchronizer chains to report.
 +------------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name                                                                                        ; Note                                                          ;
 +------------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
-; 25.18 MHz  ; 25.18 MHz       ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ;                                                               ;
-; 381.53 MHz ; 250.0 MHz       ; CLK_IN                                                                                            ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 23.11 MHz  ; 23.11 MHz       ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ;                                                               ;
+; 373.97 MHz ; 250.0 MHz       ; CLK_IN                                                                                            ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+---------------------------------------------------------------------------------------------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -195,8 +196,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                             ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -19.359 ; -20124.844    ;
-; CLK_IN                                                                                            ; -1.663  ; -23.088       ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -21.670 ; -30411.143    ;
+; CLK_IN                                                                                            ; -1.810  ; -24.435       ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -205,8 +206,8 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
-; CLK_IN                                                                                            ; 0.433 ; 0.000         ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.505 ; 0.000         ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.530 ; 0.000         ;
+; CLK_IN                                                                                            ; 0.575 ; 0.000         ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -215,7 +216,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 ; Clock                                                                                             ; Slack   ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -17.732 ; -415.768      ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -21.291 ; -487.561      ;
 +---------------------------------------------------------------------------------------------------+---------+---------------+
 
 
@@ -224,7 +225,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.841 ; 0.000         ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 1.120 ; 0.000         ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -234,7 +235,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 ; Clock                                                                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 ; CLK_IN                                                                                            ; -3.000 ; -33.866       ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -1.403 ; -2963.136     ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -1.403 ; -3142.720     ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -249,8 +250,8 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -8.483 ; -9141.449     ;
-; CLK_IN                                                                                            ; -0.812 ; -1.032        ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -9.269 ; -13955.598    ;
+; CLK_IN                                                                                            ; -0.915 ; -1.560        ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -259,8 +260,8 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
-; CLK_IN                                                                                            ; 0.166 ; 0.000         ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.283 ; 0.000         ;
+; CLK_IN                                                                                            ; 0.239 ; 0.000         ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.351 ; 0.000         ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -269,7 +270,7 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -7.799 ; -181.780      ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -9.459 ; -215.278      ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -278,7 +279,7 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 ; Clock                                                                                             ; Slack ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.207 ; 0.000         ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 0.449 ; 0.000         ;
 +---------------------------------------------------------------------------------------------------+-------+---------------+
 
 
@@ -287,8 +288,8 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 ; Clock                                                                                             ; Slack  ; End Point TNS ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
-; CLK_IN                                                                                            ; -3.000 ; -25.914       ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -1.000 ; -2112.000     ;
+; CLK_IN                                                                                            ; -3.000 ; -25.836       ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -1.000 ; -2240.000     ;
 +---------------------------------------------------------------------------------------------------+--------+---------------+
 
 
@@ -303,12 +304,12 @@ No synchronizer chains to report.
 +----------------------------------------------------------------------------------------------------+------------+-------+----------+---------+---------------------+
 ; Clock                                                                                              ; Setup      ; Hold  ; Recovery ; Removal ; Minimum Pulse Width ;
 +----------------------------------------------------------------------------------------------------+------------+-------+----------+---------+---------------------+
-; Worst-case Slack                                                                                   ; -21.044    ; 0.166 ; -19.419  ; 0.207   ; -3.000              ;
-;  CLK_IN                                                                                            ; -2.011     ; 0.166 ; N/A      ; N/A     ; -3.000              ;
-;  clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -21.044    ; 0.283 ; -19.419  ; 0.207   ; -1.403              ;
-; Design-wide TNS                                                                                    ; -22093.021 ; 0.0   ; -455.188 ; 0.0     ; -2997.002           ;
-;  CLK_IN                                                                                            ; -28.060    ; 0.000 ; N/A      ; N/A     ; -33.866             ;
-;  clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -22064.961 ; 0.000 ; -455.188 ; 0.000   ; -2963.136           ;
+; Worst-case Slack                                                                                   ; -23.487    ; 0.239 ; -23.014  ; 0.449   ; -3.000              ;
+;  CLK_IN                                                                                            ; -2.171     ; 0.239 ; N/A      ; N/A     ; -3.000              ;
+;  clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -23.487    ; 0.351 ; -23.014  ; 0.449   ; -1.403              ;
+; Design-wide TNS                                                                                    ; -33129.339 ; 0.0   ; -527.689 ; 0.0     ; -3176.586           ;
+;  CLK_IN                                                                                            ; -29.519    ; 0.000 ; N/A      ; N/A     ; -33.866             ;
+;  clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; -33099.820 ; 0.000 ; -527.689 ; 0.000   ; -3142.720           ;
 +----------------------------------------------------------------------------------------------------+------------+-------+----------+---------+---------------------+
 
 
@@ -564,7 +565,7 @@ No synchronizer chains to report.
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; CLK_IN                                                                                            ; CLK_IN                                                                                            ; 252      ; 0        ; 0        ; 0        ;
 ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; CLK_IN                                                                                            ; 1        ; 1        ; 0        ; 0        ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 282044   ; 1306789  ; 12712    ; 59178    ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 1858356  ; 18329409 ; 59302    ; 587087   ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -576,7 +577,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; CLK_IN                                                                                            ; CLK_IN                                                                                            ; 252      ; 0        ; 0        ; 0        ;
 ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; CLK_IN                                                                                            ; 1        ; 1        ; 0        ; 0        ;
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 282044   ; 1306789  ; 12712    ; 59178    ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 1858356  ; 18329409 ; 59302    ; 587087   ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -586,7 +587,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                        ; To Clock                                                                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 38089    ; 177651   ; 0        ; 0        ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 142392   ; 1409964  ; 0        ; 0        ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -596,7 +597,7 @@ Entries labeled "false path" only account for clock-to-clock false paths and not
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 ; From Clock                                                                                        ; To Clock                                                                                          ; RR Paths ; FR Paths ; RF Paths ; FF Paths ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
-; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 38089    ; 177651   ; 0        ; 0        ;
+; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] ; 142392   ; 1409964  ; 0        ; 0        ;
 +---------------------------------------------------------------------------------------------------+---------------------------------------------------------------------------------------------------+----------+----------+----------+----------+
 Entries labeled "false path" only account for clock-to-clock false paths and not path-based false paths. As a result, actual path counts may be lower than reported.
 
@@ -621,7 +622,7 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 ; Illegal Clocks                  ; 0     ; 0    ;
 ; Unconstrained Clocks            ; 0     ; 0    ;
 ; Unconstrained Input Ports       ; 1     ; 1    ;
-; Unconstrained Input Port Paths  ; 30    ; 30   ;
+; Unconstrained Input Port Paths  ; 31    ; 31   ;
 ; Unconstrained Output Ports      ; 42    ; 42   ;
 ; Unconstrained Output Port Paths ; 210   ; 210  ;
 +---------------------------------+-------+------+
@@ -761,14 +762,14 @@ No non-DPA dedicated SERDES Receiver circuitry present in device or used in desi
 Info: *******************************************************************
 Info: Running Quartus Prime Timing Analyzer
     Info: Version 18.1.1 Build 646 04/11/2019 SJ Lite Edition
-    Info: Processing started: Thu Nov 14 13:18:10 2019
+    Info: Processing started: Thu Nov 14 16:07:03 2019
 Info: Command: quartus_sta CPUProjectFinal -c CPUProjectFinal
 Info: qsta_default_script.tcl version: #1
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (21077): Low junction temperature is 0 degrees C
 Info (21077): High junction temperature is 85 degrees C
-Warning (335093): The Timing Analyzer is analyzing 56 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
+Warning (335093): The Timing Analyzer is analyzing 57 combinational loops as latches. For more details, run the Check Timing command in the Timing Analyzer or view the "User-Specified and Inferred Latches" table in the Analysis & Synthesis report.
 Critical Warning (332012): Synopsys Design Constraints File file not found: 'CPUProjectFinal.sdc'. A Synopsys Design Constraints File is required by the Timing Analyzer to get proper timing constraints. Without it, the Compiler will not properly optimize the design.
 Info (332142): No user constrained base clocks found in the design. Calling "derive_clocks -period 1.0"
 Info (332105): Deriving Clocks
@@ -776,113 +777,118 @@ Info (332105): Deriving Clocks
     Info (332105): create_clock -period 1.000 -name clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21]
 Warning (332125): Found combinational loop of 4 nodes
     Warning (332126): Node "inst27|inst|inst1|inst3|inst~3|combout"
-    Warning (332126): Node "inst27|inst|inst1|inst3|inst~2|datac"
-    Warning (332126): Node "inst27|inst|inst1|inst3|inst~2|combout"
-    Warning (332126): Node "inst27|inst|inst1|inst3|inst~3|datac"
-Warning (332125): Found combinational loop of 4 nodes
-    Warning (332126): Node "inst27|inst|inst4|inst3|inst~3|combout"
-    Warning (332126): Node "inst27|inst|inst4|inst3|inst~2|datad"
-    Warning (332126): Node "inst27|inst|inst4|inst3|inst~2|combout"
-    Warning (332126): Node "inst27|inst|inst4|inst3|inst~3|datab"
+    Warning (332126): Node "inst27|inst|inst1|inst3|inst~1|datad"
+    Warning (332126): Node "inst27|inst|inst1|inst3|inst~1|combout"
+    Warning (332126): Node "inst27|inst|inst1|inst3|inst~3|dataa"
 Warning (332125): Found combinational loop of 4 nodes
     Warning (332126): Node "inst27|inst2|inst|inst3|inst~5|combout"
-    Warning (332126): Node "inst27|inst2|inst|inst3|inst~2|datad"
-    Warning (332126): Node "inst27|inst2|inst|inst3|inst~2|combout"
-    Warning (332126): Node "inst27|inst2|inst|inst3|inst~5|datab"
+    Warning (332126): Node "inst27|inst2|inst|inst3|inst~3|datac"
+    Warning (332126): Node "inst27|inst2|inst|inst3|inst~3|combout"
+    Warning (332126): Node "inst27|inst2|inst|inst3|inst~5|dataa"
 Warning (332125): Found combinational loop of 4 nodes
-    Warning (332126): Node "inst27|inst|inst2|inst3|inst~5|combout"
-    Warning (332126): Node "inst27|inst|inst2|inst3|inst~4|datad"
+    Warning (332126): Node "inst27|inst2|inst1|inst3|inst~7|combout"
+    Warning (332126): Node "inst27|inst2|inst1|inst3|inst~3|datad"
+    Warning (332126): Node "inst27|inst2|inst1|inst3|inst~3|combout"
+    Warning (332126): Node "inst27|inst2|inst1|inst3|inst~7|datac"
+Warning (332125): Found combinational loop of 4 nodes
     Warning (332126): Node "inst27|inst|inst2|inst3|inst~4|combout"
-    Warning (332126): Node "inst27|inst|inst2|inst3|inst~5|dataa"
+    Warning (332126): Node "inst27|inst|inst2|inst3|inst~2|datad"
+    Warning (332126): Node "inst27|inst|inst2|inst3|inst~2|combout"
+    Warning (332126): Node "inst27|inst|inst2|inst3|inst~4|dataa"
+Warning (332125): Found combinational loop of 4 nodes
+    Warning (332126): Node "inst27|inst|inst4|inst3|inst~5|combout"
+    Warning (332126): Node "inst27|inst|inst4|inst3|inst~3|datad"
+    Warning (332126): Node "inst27|inst|inst4|inst3|inst~3|combout"
+    Warning (332126): Node "inst27|inst|inst4|inst3|inst~5|dataa"
 Info (332143): No user constrained clock uncertainty found in the design. Calling "derive_clock_uncertainty"
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Info: Found TIMING_ANALYZER_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow 1200mV 85C Model
 Info: Can't run Report Timing Closure Recommendations. The current device family is not supported.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -21.044
+Info (332146): Worst-case setup slack is -23.487
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -21.044          -22064.961 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-    Info (332119):    -2.011             -28.060 CLK_IN 
-Info (332146): Worst-case hold slack is 0.456
+    Info (332119):   -23.487          -33099.820 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):    -2.171             -29.519 CLK_IN 
+Info (332146): Worst-case hold slack is 0.480
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.456               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-    Info (332119):     0.478               0.000 CLK_IN 
-Info (332146): Worst-case recovery slack is -19.419
+    Info (332119):     0.480               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):     0.622               0.000 CLK_IN 
+Info (332146): Worst-case recovery slack is -23.014
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -19.419            -455.188 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-Info (332146): Worst-case removal slack is 0.823
+    Info (332119):   -23.014            -527.689 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+Info (332146): Worst-case removal slack is 1.242
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.823               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):     1.242               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -33.866 CLK_IN 
-    Info (332119):    -1.403           -2963.136 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):    -1.403           -3142.720 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
 Info: Analyzing Slow 1200mV 0C Model
 Info (334003): Started post-fitting delay annotation
 Info (334004): Delay annotation completed successfully
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -19.359
+Info (332146): Worst-case setup slack is -21.670
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -19.359          -20124.844 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-    Info (332119):    -1.663             -23.088 CLK_IN 
-Info (332146): Worst-case hold slack is 0.433
+    Info (332119):   -21.670          -30411.143 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):    -1.810             -24.435 CLK_IN 
+Info (332146): Worst-case hold slack is 0.530
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.433               0.000 CLK_IN 
-    Info (332119):     0.505               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-Info (332146): Worst-case recovery slack is -17.732
+    Info (332119):     0.530               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):     0.575               0.000 CLK_IN 
+Info (332146): Worst-case recovery slack is -21.291
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):   -17.732            -415.768 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-Info (332146): Worst-case removal slack is 0.841
+    Info (332119):   -21.291            -487.561 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+Info (332146): Worst-case removal slack is 1.120
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.841               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):     1.120               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
     Info (332119):    -3.000             -33.866 CLK_IN 
-    Info (332119):    -1.403           -2963.136 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):    -1.403           -3142.720 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
 Info: Analyzing Fast 1200mV 0C Model
 Info (332123): Deriving Clock Uncertainty. Please refer to report_sdc in the Timing Analyzer to see clock uncertainties.
 Critical Warning (332148): Timing requirements not met
-Info (332146): Worst-case setup slack is -8.483
+Info (332146): Worst-case setup slack is -9.269
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -8.483           -9141.449 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-    Info (332119):    -0.812              -1.032 CLK_IN 
-Info (332146): Worst-case hold slack is 0.166
+    Info (332119):    -9.269          -13955.598 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):    -0.915              -1.560 CLK_IN 
+Info (332146): Worst-case hold slack is 0.239
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.166               0.000 CLK_IN 
-    Info (332119):     0.283               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-Info (332146): Worst-case recovery slack is -7.799
+    Info (332119):     0.239               0.000 CLK_IN 
+    Info (332119):     0.351               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+Info (332146): Worst-case recovery slack is -9.459
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -7.799            -181.780 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
-Info (332146): Worst-case removal slack is 0.207
+    Info (332119):    -9.459            -215.278 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+Info (332146): Worst-case removal slack is 0.449
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):     0.207               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):     0.449               0.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
 Info (332146): Worst-case minimum pulse width slack is -3.000
     Info (332119):     Slack       End Point TNS Clock 
     Info (332119): ========= =================== =====================
-    Info (332119):    -3.000             -25.914 CLK_IN 
-    Info (332119):    -1.000           -2112.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
+    Info (332119):    -3.000             -25.836 CLK_IN 
+    Info (332119):    -1.000           -2240.000 clockDivider:inst15|lpm_counter:LPM_COUNTER_component|cntr_k5h:auto_generated|counter_reg_bit[21] 
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
-Info: Quartus Prime Timing Analyzer was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 1074 megabytes
-    Info: Processing ended: Thu Nov 14 13:18:14 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:07
+Info: Quartus Prime Timing Analyzer was successful. 0 errors, 31 warnings
+    Info: Peak virtual memory: 1080 megabytes
+    Info: Processing ended: Thu Nov 14 16:07:08 2019
+    Info: Elapsed time: 00:00:05
+    Info: Total CPU time (on all processors): 00:00:08
 
 
